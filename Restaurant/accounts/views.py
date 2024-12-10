@@ -8,6 +8,10 @@ from django.contrib.auth.hashers import check_password
 from .models import Foods
 from django.conf import settings
 
+
+def home(request):
+    return HttpResponse("Welcome to 'Three Fortunes' ordering system")
+
 def register_user(request):
     if request.method == "POST":
         username = request.POST['username']
