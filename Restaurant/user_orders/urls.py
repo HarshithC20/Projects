@@ -3,6 +3,5 @@ from .views import menu
 
 urlpatterns = [
     path('menu/', menu, name='Menu View'),
-    
-
-]
+      
+] 
